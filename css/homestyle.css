@@ -1,0 +1,207 @@
+body {
+	background-color: #FFFFFF;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	color:black;
+}
+/*div testa e suo contenuto */
+#testa{
+	position:absolute;
+	width: 1000px;
+	height: 134px;	
+	z-index:1;
+	background-color: #FFFFFF;
+	left: 50%;
+	top: 0px;
+	margin: 0 0 0 -500px;
+	color:black;
+}
+#logo {
+	position:absolute;
+	width:130px;
+	height:130px;
+	z-index:2;
+	left: 36px;
+	top: 5px;
+}
+h1{
+	font-family: "Comic Sans MS",sans-serif;
+	font-size: 30px;
+	color: #3399FF;
+	background: inherit;
+	font-style: italic;
+}
+#titolo{
+	position:absolute;
+	left: 190px;
+	top:40px;
+	text-align: center;
+}
+/* barra blu con icone*/
+#bandablu {
+	position:absolute;
+	width:380px;
+	height:100px;
+	z-index:2;
+	left: 600px;
+	top: 30px;
+}
+#play {
+	position:absolute;
+	width:70px;
+	height:70px;
+	z-index:3;
+	left: 635px;
+	top: 55px;
+}
+#classificapunteggi{
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	z-index:3;
+	left: 715px;
+	top: 55px;
+
+}
+#manuale {
+	position:absolute;
+	width:70px;
+	height:70px;
+	z-index:3;
+	left: 795px;
+	top: 55px;
+}
+#comandi {
+	position:absolute;
+	width:70px;
+	height:70px;
+	z-index:3;
+	left: 875px;
+	top: 55px;
+}
+a:link {
+	text-decoration: none;
+	color: #999999;
+	background-color: #FFFFFF;
+}
+a:visited {
+	text-decoration: none;
+	color: #999999;
+	background-color: #FFFFFF;
+}
+a:hover {
+	text-decoration: none;
+	color: #999999;
+	background-color: #FFFFFF;
+}
+a:active {
+	text-decoration: none;
+	color: #999999;
+	background-color: #FFFFFF;
+}
+img{
+border: 0;
+}
+#stecca{
+	position: absolute;
+	z-index:3;
+	visibility: hidden;
+	height: 32px;
+	width: 3px;
+	background: #3399FF;
+	color: #FFFFFF;
+	top: 130px;
+	left: 890px;
+}
+#menuistr{
+	position:absolute;
+	z-index:3;
+	visibility: hidden;
+	width:270px;
+	height:125px;
+	background: #3399FF;
+	top: 162px;
+	left: 725px;
+	color:black;
+}
+
+/* div centro e suo contenuto */
+#centro{
+	position:relative;
+	width:1000px;
+	height:410px;
+	top:136px;
+	left: 50%;
+	margin: 0 0 0 -500px;
+	background-color: #FFFFFF;
+	border: solid 1px;
+	border-color: #3399FF;
+	color:black;	
+}
+#schermatainiziale{
+	position: absolute;
+	background-color: #FFFFFF;
+	width: 980px;
+	height: 390px;
+	top: 5px;
+	left: 5px;
+	padding: 5px;
+	font-family: "Comic Sans MS",sans-serif;
+	font-size: 20px;
+	color: #3399FF;
+}
+#zonagioco{
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	top: 5px;
+	left: 30%;
+}
+#nuovapartita{
+	position:absolute;
+	z-index:3;
+	visibility: hidden;
+	width:105px;
+	height:50px;
+	background: #FFFFFF;
+	top: 10px;
+	left: 10px;
+	color:black;
+}
+button{
+	width:90px;
+	height:20px;
+	color:#3399FF; 
+	font: bold 84% 'trebuchet ms',helvetica,sans-serif; 
+	background-color:#fed; 
+	border:1px solid; 
+	border-color: #999 #666 #666 #999;
+}
+
+/*div piede e suo contenuto*/
+#piede{
+	position:absolute;
+	width:1000px;
+	height: 17px;
+	top:550px;
+	left: 50%;
+	margin: 0 0 0 -500px;
+	background-color: #FFFFFF;
+	color:black;
+}
+#anno{
+	position: absolute;
+	top: -10px;
+	left: 5px;
+	font-size:8pt;
+	font-weight: bold;
+	}
+#nota{
+	position: absolute;
+	top: -10px;
+	right: 20px;
+	font-size:8pt;
+	font-weight: bold;
+}

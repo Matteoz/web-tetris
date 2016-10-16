@@ -1,0 +1,123 @@
+	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+	"http://www.w3.org/TR/html4/strict.dtd">
+	<html>
+	<head>
+	<title>Tetris</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<base href="./index.html">
+	<meta name="Author" content="Matteo Zarro">
+
+	<link rel="stylesheet" type="text/css" href="./css/homestyle.css" media="screen">
+
+	<script type="text/javascript" src="./js/tetris/cubetto.js"></script>
+	<script type="text/javascript" src="./js/tetris/classePezzo.js"></script>
+	<script type="text/javascript" src="./js/tetris/pezzoO.js"></script>
+	<script type="text/javascript" src="./js/tetris/pezzoI.js"></script>
+	<script type="text/javascript" src="./js/tetris/pezzoT.js"></script>
+	<script type="text/javascript" src="./js/tetris/pezzoL.js"></script>
+	<script type="text/javascript" src="./js/tetris/pezzoJ.js"></script>
+	<script type="text/javascript" src="./js/tetris/pezzoS.js"></script>
+	<script type="text/javascript" src="./js/tetris/pezzoZ.js"></script>
+	<script type="text/javascript" src="./js/tetris/griglia.js"></script>
+	<script type="text/javascript" src="./js/tetris/punteggio.js"></script>
+	<script type="text/javascript" src="./js/tetris/pausa.js"></script>
+	<script type="text/javascript" src="./js/tetris/gioco.js"></script>
+	<script type="text/javascript" src="./js/tetris/gameover.js"></script>
+	<script type="text/javascript" src="./js/tetris/generatorePezzi.js"></script>
+	<script type="text/javascript" src="./js/tetris/comandi.js"></script>
+	<script type="text/javascript" src="./js/tetris/play.js"></script>
+	<script type="text/javascript" src="./js/tetris/pulisci.js"></script>
+	<script type="text/javascript" src="./js/tetris/pulisciEgioca.js"></script>
+	<script type="text/javascript" src="./js/tetris/gestisciVitaPezzo.js"></script>
+	<script type="text/javascript" src="./js/tetris/salvacookie.js"></script>
+	<script type="text/javascript" src="./js/tetris/topTen.js"></script>
+	<script type="text/javascript" src="./js/tetris/tetris.js"></script>
+	<script type="text/javascript" src="./js/tetris/gestisciSalvataggio.js"></script>
+
+	<script type="text/javascript" src="./js/menuistruzioni.js"></script>
+	<script type="text/javascript" src="./js/mostraTopTen.js"></script>
+
+	</head>
+	<body id="body">
+
+	<!-- div che racchiude l'icona home e la barra blu del menù -->
+	<div id="testa">
+
+	<div id="logo"><img src="./img/home.png" alt="home" usemap="#Map1">
+		<map name="Map1" id="Map1">
+				<area shape='rect' coords='37,14,141,98' alt="home" href="index.html">
+		</map>
+	</div>
+
+	<div id="titolo"><h1> Another Brick In The Wall </h1></div>
+
+	<!-- barra menù a destra -->
+	<div id="bandablu"><img src="./img/barra.png" alt="banda blu"></div>
+
+	<div id="play"><img src="./img/play.png" alt="icona play" usemap="#Map2">
+		<map name="Map2" id="Map2">
+				<area shape='poly' coords='17,14,38,15,83,34,22,54,9,34' alt="play" href="javascript:void('')" onClick="gioca()">
+		</map>
+	</div>
+
+	<div id="classificapunteggi"><img src="./img/punteggio.png" alt="icona punteggio" usemap="#Map3">
+		<map name="Map3" id="Map3">
+				<area shape='rect' coords='18,5,70,54'  alt="punteggi" href="javascript:void('')" onMouseOver="mostraClassifica()" onMouseOut="nascondiClassifica()">
+		</map>
+	</div>
+
+	<div id="manuale"><img src="./img/manuale.png" alt="icona manuale" usemap="#Map4">
+		<map name="Map4" id="Map4">
+				<area shape='rect' coords='18,15,75,54' alt="manuale" href="./html/manuale.html">
+		</map>
+	</div>
+
+	<div id="comandi"><img src="./img/comandi.png" alt="comandi" usemap="#Map5">
+		<map name="Map5" id="Map5">
+				<area shape='rect' coords='18,5,75,54'  alt="comandi" href="javascript:void('')" onMouseOver="mostraistruzioni()" onMouseOut="nascondiistruzioni()">
+		</map>
+	</div>
+	<!-- fine barra menù a destra -->
+	
+
+	<!-- menu a comparsa con i comandi -->
+	<div id="stecca"> </div>
+	<div id="menuistr">
+	
+	</div>
+	</div>
+	<!-- fine menu a comparsa con i comandi -->
+	<!-- fine div -->
+	
+	<!-- div rettangolare che contiene il gioco, e i relativi pulsanti a comparsa -->
+	<div id="centro">
+	
+	<div id="schermatainiziale">
+	<p>Benvenuti in <strong>&quot;Another Brick In The Wall&quot;</strong>,<br>il nuovo modo secondo cui Tetris deve essere giocato...<br>Le principali azioni sono raccolte nel men&ugrave; blu che presenta quattro icone.</p>
+	<ul>
+	<li>Vuoi immediatamente giocare una nuova partita a Tetris? Semplice, basta cliccare sull'<strong>Icona Play</strong>. 
+	<li>Vuoi vedere la classifica con i migliori dieci punteggi? Semplice, basta trascinare il mouse sull'<strong>Icona Trofeo</strong>.
+	<li>Vuoi conoscere il funzionamento completo del servizio? Semplice, basta riferirsi al manuale cliccando sull'<strong>Icona Manuale</strong>.
+	<li>Non ti ricordi i comandi di gioco? Semplice, basta trascinare in qualsiasi momento il mouse sull'<strong>Icona Punto Interrogativo</strong> e ti apparirà la lista di tutti i comandi.
+	</ul>
+	
+	
+	</div>
+	<div id="zonagioco"> </div>
+
+	<div id="nuovapartita">
+	<button onclick="nuovaPartita()" onfocus="this.blur()">NuovaPartita</button><br>
+	<button onclick="resetta()" onfocus="this.blur()">Reset</button><br>
+	</div>
+	</div>
+
+	<!-- div note fondo pagine -->
+	<div id="piede">
+	<p id="anno">2010/2011</p> <p id="nota">Developed By Matteo Zarro</p>
+
+	</div>
+	<!-- fine div -->
+
+
+	</body>
+	</html>
